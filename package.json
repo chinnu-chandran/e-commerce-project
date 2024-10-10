@@ -1,0 +1,41 @@
+{
+  "name": "section5",
+  "version": "1.0.0",
+  "description": "first express project",
+  "main": "appexpress.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=production MONGO_USER=chin MONGO_PASSWORD=wnWwCjHhAoy0qcqT MONGO_DEFAULT_DATABASE=shop STRIPE_KEY=sk_test_51Q3C00EP6hxmuY9hx2hiSHLmja6BcXND2hBwjIJH2hrqMguU6pT6F7xKCP1M5ea3UBsZwiHiFPv3btDZS4dtNgFj0090jKzNlP node appexpress.js",
+    "start-server": "node appexpress.js",
+    "start:dev": "nodemon appexpress.js"
+  },
+  "author": "chinnu",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^2.2.0",
+    "csurf": "^1.11.0",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-handlebars": "^8.0.1",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.2.0",
+    "helmet": "^8.0.0",
+    "mailtrap": "^3.4.0",
+    "mongoose": "^8.6.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.0",
+    "nodemailer": "^6.9.15",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "pdfkit": "^0.15.0",
+    "pug": "^3.0.3",
+    "sequelize": "^6.37.3",
+    "stripe": "^16.12.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
